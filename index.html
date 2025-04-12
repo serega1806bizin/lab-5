@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Обробка тексту з регулярними виразами</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Лабораторна робота №5</h1>
+    <h1 class="title">🔍 Регулярні вирази</h1>
+
+    <div class="card">
+      <h2>📞 Завдання №1: Обробити номера телефонів</h2>
+      <textarea id="phoneInput" placeholder="Введіть текст із номерами телефонів...">Іванов І.І. тел. 120-10-87; Петров В.В. тел. 378-65-90; Захаров С.С. тел. 564-97-23; Семенов А.А. тел. 244-55-21</textarea>
+      <button onclick="formatPhones()">Обробити</button>
+      <div id="phoneResult" class="result"></div>
+    </div>
+
+    <div class="card">
+      <h2>🧑 Завдання №2: Знайти імена</h2>
+      <textarea id="nameInput" placeholder="Введіть список присутніх...">Присутні: Т.В.Мацак, І.М.Гарасюта, В.Г.Міхайлов, В.Г.Міхайлова, О.В.Шушпан.</textarea>
+      <button onclick="extractNames()">Знайти імена</button>
+      <ul id="nameList" class="result"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
