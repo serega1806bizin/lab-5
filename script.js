@@ -35,3 +35,12 @@ function extractNames() {
     list.appendChild(li);
   }
 }
+
+// Кастомний курсор
+document.addEventListener('DOMContentLoaded', () => {
+  const cursor = document.getElementById('glow-cursor');
+
+  document.addEventListener('mousemove', e => {
+    cursor.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
+  });
+});
